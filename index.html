@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piadas de Kalel</title>
+    <link rel="stylesheet" href="visual2.css">
+    <script src="https://kit.fontawesome.com/99451e1fb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body class="light-mode">
+    <div class="sub-body">
+        <header>
+            <div class="logo">
+            </div>
+            <div class="centro">
+                <a href="https://www.facebook.com/Kalel2007"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/piadas_de_kalel/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@piadasdekalel2007"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="direita">
+                <div class="botoes">
+                    <a class="dark-light" style="display:none"><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    <a class="english" href="english.html">Site in English</a>
+                </div>
+                <div class="pesquisa">
+                    <div class="caixa-busca">
+                        <input type="text" name="Busca" placeholder="Busque aqui">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </div>
+                    <i class="fas fa-magnifying-glass" onclick="pesquisa()" style="display: none;">
+                    </i>
+                    <i style="display: none;" class="fa-solid fa-bars" onclick="abremenu();"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-pesquisa" id="pesquisa">
+            <div class="mobile-caixabusca">
+                <input type="text" name="Busca" placeholder="Busque aqui">
+            </div>
+        </div>
+
+        <div class="mobile-nav" style="display:none" id="nav">
+            <div class="topo">
+                <h1>Conteúdo</h1>
+                <i class="fa-solid fa-x" onclick="abremenu()"></i>
+            </div>
+            <div class="meio">
+                <div>
+                    <a href="p1.html" target="pagina1">Início</a>
+                </div>
+                <div>
+                    <a href="l2.html" target="pagina1">Listas</a>
+                </div>
+                <div>
+                    <a href="videos.html" target="pagina1">Vídeos</a>
+                </div>
+                <div>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+            <div class="base">
+                <a class="english" href="english.html" id="english">Site in English</a>
+                <div>
+                    <a href="https://www.facebook.com/Kalel2007"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/piadas_de_kalel/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@piadasdekalel2007"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div>
+                <a href="p1.html" target="pagina1">Início</a>
+            </div>
+            <div>
+                <a href="l2.html" target="pagina1">Listas</a>
+            </div>
+            <div>
+                <a href="videos.html" target="pagina1">Vídeos</a>
+            </div>
+            <div>
+                <a href="contato.html">Contato</a>
+            </div>
+        </nav>
+
+        <main>
+            <iframe src="p1.html" name="pagina1" id="content-frame"></iframe>
+            <div class="no-iframe" style="background-color: white;">
+            </div>
+        </main>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="marco-zero">
+            <div>
+                <p>
+                    Conteúdo: Arthur Kalel
+                </p>
+                <p>
+                    Designer: Arthur Kalel
+                </p>
+            </div>
+            <div>
+                <p>
+                    <a>Política de privacidade</a>
+                </p>
+                <p>
+                    <a>Termos de uso</a>
+                </p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+    </footer>
+</body>
+
+</html>

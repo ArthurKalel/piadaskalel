@@ -1,0 +1,113 @@
+body {
+    height: 5500px;
+}
+
+.post {
+    width: 850px;
+    height: 590px;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cima,
+.baixo,
+.meme,
+.legenda {
+    width: 100%;
+}
+
+
+.cima {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 6%;
+}
+
+.cima i {
+    font-size: 30px;
+    transform: rotate(180deg);
+    margin-left: 5px;
+    color: #0000cd;
+    border: 0.5px black solid;
+    border-radius: 10%;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+}
+
+.info h1,
+h6 {
+    margin-left: 10px;
+}
+
+.baixo {
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.legenda {
+    background-color: white;
+    height: 10%;
+    display: flex;
+    align-items: self-end;
+}
+
+.legenda p {
+    margin-bottom: 7px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.meme {
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.meme:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0 auto;
+    }
+
+    .post {
+        width: 99%;
+        height: 350px;
+        border-radius: 0px;
+    }
+
+    .info {
+        margin-right: 49.5%;
+        flex-direction: column;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .info h6 {
+        font-size: 10px;
+    }
+
+    .legenda p {
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .meme iframe {
+        height: 250px;
+        width: 100%;
+    }
+}

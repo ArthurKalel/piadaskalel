@@ -1,0 +1,249 @@
+.post {
+    width: 500px;
+    height: 590px;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cima,
+.baixo,
+.meme,
+.legenda {
+    width: 100%;
+}
+
+
+.cima {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 6%;
+}
+
+.cima i {
+    font-size: 30px;
+    transform: rotate(180deg);
+    margin-left: 5px;
+    color: #0000cd;
+    border: 0.5px black solid;
+    border-radius: 10%;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+}
+
+.info h1,
+h6 {
+    margin-left: 10px;
+}
+
+.baixo {
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.legenda {
+    background-color: white;
+    height: 10%;
+    display: flex;
+    align-items: self-end;
+}
+
+.legenda p {
+    margin-bottom: 7px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.meme {
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.meme:hover {
+    cursor: pointer;
+}
+
+.paginas {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px !important;
+    background-color: #0000cd;
+    margin: 0 auto;
+}
+
+.paginas p {
+    margin: 0px 20px;
+    font-size: 35px;
+}
+
+.paginas a {
+    color: white;
+    text-decoration: none;
+}
+
+.paginas a:hover {
+    color: #F70404;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0 auto;
+    }
+
+    .post {
+        width: 100%;
+        height: 600px;
+        border-radius: 0px;
+    }
+
+    .info {
+        margin-right: 55px;
+    }
+
+    .info h1, h6{
+        font-size: 25px;
+    }
+
+    .legenda p {
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .meme img {
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .post {
+        height: 570px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .info {
+        margin-right: 115px;
+    }
+
+    .info h1{
+        font-size: 20px;
+    }
+
+    .info h6 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .post {
+        height: 510px;
+    }
+
+    .info {
+        margin-right: 125px;
+    }
+
+    .info h1, h6{
+        font-size: 15px;
+    }
+
+    .legenda p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .post {
+        height: 480px;
+    }
+
+    .info {
+        margin-right: 100px;
+    }
+
+    .info h1, h6{
+        font-size: 15px;
+    }
+
+    .legenda p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .post {
+        height: 460px;
+    }
+
+    .info {
+        margin-right: 90px;
+    }
+
+    .info h1, h6{
+        font-size: 15px;
+    }
+
+    .legenda p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .info {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .info {
+        margin-right: 70px;
+    }
+
+    .post {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .info {
+        margin-right: 60px;
+    }
+
+    .post {
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .info {
+        margin-right: 50px;
+    }
+
+    .post {
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .info {
+        margin-right: 40px;
+    }
+
+    .post {
+        height: 410px;
+    }
+}

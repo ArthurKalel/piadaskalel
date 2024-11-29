@@ -1,0 +1,271 @@
+body {
+    height: 4300px;
+  }
+
+  .principais {
+    display: flex;
+    height: 750px;
+    align-items: center;
+    width: 1000px;
+    margin-bottom: 35px;
+  }
+
+  .Carrossel {
+    height: 670px;
+    background-color: white;
+    width: 950px;
+    margin-bottom: 200px;
+    margin: 0 auto;
+    border: black 4px solid;
+    border-radius: 10px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #0000cd;
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    margin-top: 30%;
+  }
+
+  .carousel-control-prev {
+    margin-right: 100px;
+  }
+
+  .lista {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .lista a {
+    font-size: 30px;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #0000cd;
+    font-weight: bold;
+  }
+
+  .lista a:hover {
+    text-decoration: underline;
+  }
+
+  .lista p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .artigos {
+    height: 400px;
+    width: 99%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: double #808080 4px;
+  }
+
+  .caixa {
+    display: flex;
+    margin-right: 130px;
+    flex-direction: row;
+    height: 250px;
+    width: 800px;
+  }
+
+  .caixa img {
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+  }
+
+  .texto {
+    display: flex;
+    height: 250px;
+    width: 650px;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 15px;
+    left: 0%;
+    display: flex;
+  }
+
+  .texto a {
+    text-decoration: none;
+    background-color: #FFFE04;
+    border: #0000cd solid 2px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .texto p {
+    font-size: 17px;
+  }
+
+  .anuncio-lista {
+    width: 100%;
+    background-color: aqua;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+  }
+
+.introducao {
+    height: 380px;
+    width: 90%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+
+.post {
+    width: 500px;
+    height: 592px;
+    display: flex;
+    margin-top: 60px !important;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.cima,
+.baixo,
+.meme,
+.legenda {
+    width: 100%;
+}
+
+
+.cima {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 6%;
+}
+
+.cima i {
+    font-size: 30px;
+    transform: rotate(180deg);
+    margin-left: 5px;
+    color: #0000cd;
+    border: 0.5px black solid;
+    border-radius: 10%;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;
+}
+
+.info h1,
+h6 {
+    margin-left: 10px;
+}
+
+.baixo {
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+}
+
+.legenda {
+    background-color: white;
+    height: 10%;
+    display: flex;
+    align-items: self-end;
+}
+
+.legenda p {
+    margin-bottom: 7px;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.meme {
+    height: 90%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.meme:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0 auto;
+    }
+    
+    .principais, .Carrossel, .lista img, .artigos, .caixa, .texto {
+        width: 100%;
+      }
+
+      .carousel-indicators {
+        display: none;
+      }
+
+      .carousel-control-prev,
+      .carousel-control-next {
+        margin-top: 155%;
+        height: 50px;
+      }
+
+      .artigos {
+        flex-direction: column;
+        height: 560px;
+      }
+
+      .caixa {
+        flex-direction: column;
+      }
+
+      .caixa img {
+        width: 100%;
+      }
+
+      .texto {
+        margin-top: 20px;
+      }
+
+      .texto p {
+        font-size: 12px;
+        margin-top: 20px;
+      }
+
+      .anuncio-lista {
+        display: none;
+      }
+
+    .introducao {
+      font-size: 15px;
+    }
+
+    .post {
+        width: 100%;
+        height: 510px;
+        border-radius: 0px;
+    }
+
+    .info {
+        margin-right: 28px;
+    }
+
+    .legenda p {
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+
+    .meme img {
+        width: 99%;
+    }
+}
